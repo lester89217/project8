@@ -14,8 +14,8 @@ const Homepage = () => {
   let [currentSearch, setCurrentSearch] = useState("");
   //金鑰
   const auth = process.env.REACT_APP_API_KEY;
-  const initialURL = process.env.REACT_APP_INITIAL_URL;
-  let searchURL = process.env.REACT_APP_SEARCH_URL;
+  const initialURL = "https://api.pexels.com/v1/curated?page=1&per_page=15";
+  let searchURL = `https://api.pexels.com/v1/search?query=${input}&per_page=15&page=1`;
 
   const search = async (url) => {
     let result = await axios.get(url, {

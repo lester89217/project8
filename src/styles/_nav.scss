@@ -1,0 +1,21 @@
+nav {
+  background-color: rgb(34, 34, 34);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    width: 100%; /* 或 flex: 1; */
+
+    li {
+      padding: 0.5rem 1rem;
+      a {
+        font-size: 1.25rem;
+        color: white;
+      }
+    }
+  }
+}
